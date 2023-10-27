@@ -25,7 +25,7 @@ const createProduct = (req, res) => {
   try {
     const newProduct = ProductModel.add(name, brand);
 
-    res.status(200);
+    res.status(201);
     res.json(newProduct);
   } catch (e) {
     res.status(500);
