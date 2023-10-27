@@ -15,7 +15,7 @@ const getProductById = (req, res) => {
     return res.send({ message: 'Produto não encontrado' });
   }
 
-  res.status(200);
+  res.status(201);
   res.json(product);
 };
 
